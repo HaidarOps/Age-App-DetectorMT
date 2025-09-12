@@ -18,19 +18,19 @@
             <h2> Age Model</h2>
 
             <!-- Buttons div-->
-            <div class="buttons-container">
+            <div class="buttons-container" id="inner-container">
 
                 <label for="model-select"> Choose a model:</label>
-                <select name="models" id="model-select">
+                <select name="models" id="model-select" >
                     <option value="">--Please choose an option--</option>
                     <option value="face-api" >Face api</option>
                 </select>
             </div>
 
-             <input type="file" id="input_image" name="input_image" accept=".png, .jpg, jpeg"/>
+             <input type="file" id="input_image" name="input_image" accept=".png, .jpg, jpeg" onclick="ImagePaser()"/>
 
 
-             <button>Analyze photo</button>
+             <button onclick="">Analyze photo</button>
         </div>
         
     </div>
