@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
     <title>Facial regonizer</title>
 </head>
 <body>
-
     <!-- Outer Div -->   
     <div class = "outer-container">
         <!-- Inner Div-->
@@ -27,10 +26,10 @@
                 </select>
             </div>
 
-             <input type="file" id="input_image" name="input_image" accept=".png, .jpg, jpeg" onclick="ImagePaser()"/>
+             <input type="file" id="input_image" name="input_image" accept=".png, .jpg, jpeg" />
 
 
-             <button onclick="">Analyze photo</button>
+             <button id="analyze_button">Analyze photo</button>
         </div>
         
     </div>
