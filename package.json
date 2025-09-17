@@ -14,9 +14,11 @@
   "type": "commonjs",
   "dependencies": {
     "@vladmandic/human": "^3.3.6",
-    "dropzone": "^6.0.0-beta.2"
+    "dropzone": "^6.0.0-beta.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "tailwindcss": "^4.1.13",
     "vite": "^7.1.5"
   }
 }
