@@ -4,10 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "@vladmandic/human": "^3.3.6",
+    "dropzone": "^6.0.0-beta.2"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
+  }
 }

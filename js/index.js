@@ -2,13 +2,16 @@
 
 
 
-import Human from './../dist/human.esm.js'; // for direct import must use path to module, not package name
+import Human from '@vladmandic/human';
+import Dropzone from "dropzone";
 
 
 
 document.addEventListener("DOMContentLoaded", function(event){
   document.getElementById("input_image").addEventListener('change', ImagePaser);
-  document.getElementById("analyze_button").addEventListener('click', analyzeImageHumanModel)
+  document.getElementById("analyze_button").addEventListener('click', analyzeImageHumanModel);
+  const uploadButton = document.getElementById("uploadButton");
+  uploadButton.addEventListener("click", uploadFiles);
 
 })   
 
@@ -42,6 +45,26 @@ const humanConfig = { // user configuration for human, used to fine-tune behavio
 // await human.load();
 // await human.warmup();
 // console.log("Model is warmed")
+
+
+function uploadFiles(event){
+  event.preventDefault();
+  const fileInput = document.getElementById("fileInput");
+  const selectedFiles = fileInput.files;
+  // Check if any files are selected
+  if (selectedFiles.length === 0) {
+    alert("Please select at least one file to upload.");
+    return;
+  }
+  const formData = new FormData();
+  // Append each selected file to the FormData object
+  for (let i = 0; i < selectedFiles.length; i++) {
+    formData.append("files[]", selectedFiles[i]);
+  }
+  console.log([...formData])
+
+}
+
 
 
 // Used to analyze image on the with Human model api

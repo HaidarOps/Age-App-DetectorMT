@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/index.js" type="module"></script>
+
     <title>Facial regonizer</title>
 </head>
 <body>
@@ -26,9 +27,12 @@
                 </select>
             </div>
 
-             <input type="file" id="input_image" name="input_image" accept=".png, .jpg, jpeg" />
-
-
+             <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="files[]" multiple accept="image/*,video/*"/>
+                <button type="button" id="uploadButton">Upload Files</button>
+            </form>
+        <input type="file" id="input_image" name="input_image" accept=".png, .jpg, jpeg"/>
+        <form action="/target" class="dropzone"></form>
              <button id="analyze_button">Analyze photo</button>
         </div>
         
