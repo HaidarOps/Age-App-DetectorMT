@@ -1,9 +1,13 @@
 
 body {
-  /* padding: 20px; */
+  padding : 20px;
+  background
 }
 
+
 .outer-container {
+  margin: auto; 
+  max-width: 1200px;
   text-align : center;
   
 }

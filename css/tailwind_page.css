@@ -1,0 +1,11 @@
+.dropzone-container.svelte-12uhhij.svelte-12uhhij {
+    border-radius: 2.5rem;
+    border: 3px solid white;
+    background: white;
+    width: 21.875rem;
+    height: 21.875rem;
+    width: 100%;
+    max-width: 21.875rem;
+    margin: auto;
+    box-shadow:0 .625rem 1.25rem #0000001a
+}

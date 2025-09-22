@@ -120,6 +120,7 @@ function createImage() {
     return 0;
 }
 
+
 function ImagePaser(){
 
     console.log(document.getElementById('input_image').value);
