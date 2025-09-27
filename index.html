@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/index.js" type="module"></script>
 
     <title>Facial regonizer</title>
 </head>
 <body>
-    <!-- Outer Div -->   
-    <div class = "outer-container", id="outer-container">
-        <!-- Inner Div-->
-      <div class = "inner-container">
-            
-        <!-- Title-->
-            <h2> Age Model</h2>
-
-            <!-- Buttons div-->
-            <div class="buttons-container" id="button-container">
-
-                <label for="model-select"> Choose a model:</label>
-                <select name="models" id="model-select" >
-                    <option value="">--Please choose an option--</option>
-                    <option value="face-api" >Face api</option>
-                </select>
-            </div>
-
-             <form id="uploadForm" enctype="multipart/form-data">
-                <input type="file" id="fileInput" name="files[]" multiple accept="image/*,video/*"/>
-                <button type="button" id="uploadButton">Upload Files</button>
-            </form>
-        <input type="file" id="input_image" name="input_image" accept=".png, .jpg, jpeg"/>
-        <form action="/target" class="dropzone"></form>
-             <button id="analyze_button">Analyze photo</button>
+    <main>
+      <header class="site-navigation">
+        <div class="h-14 container max-w-max border-solid border-4 flex-row">
+          <!-- logo  -->
+          <div class="h-16 w-16">
+            <img src="./assets/logo.svg" alt="Not found">
+          </div>
+          
         </div>
-        
-    </div>
+      </header>
+      <!-- Outer Div -->   
+      <div class = "outer-container" id="outer-container">
+        <!-- Inner Div-->
+        <div class = "inner-container">
 
+          <!-- Title-->
+          <h2> Age Model</h2>
+
+          <!-- Buttons div-->
+          <div class="buttons-container" id="button-container">
+
+            <label for="model-select"> Choose a model:</label>
+            <select name="models" id="model-select" >
+              <option value="">--Please choose an option--</option>
+              <option value="face-api" >Face api</option>
+            </select>
+          </div>
+
+          <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="files[]" multiple accept="image/*,video/*"/>
+            <button type="button" id="uploadButton">Upload Files</button>
+          </form>
+          <input type="file" id="input_image" name="input_image" accept=".png, .jpg, jpeg"/>
+          <form action="/target" class="dropzone"></form>
+          <button id="analyze_button">Analyze photo</button>
+        </div>
+
+      </div>
+
+    </main>
 
         
         <!-- Description -->
